@@ -1,0 +1,29 @@
+groups:
+  - name: ml_alerts
+    rules:
+      - alert: ModelAccuracyLow
+        expr: ml_model_accuracy < 0.85
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Akurasi model rendah"
+          description: "Akurasi {{ $value }} di bawah 85%"
+
+      - alert: HighCPUUsage
+        expr: ml_cpu_usage_percent > 80
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "CPU usage tinggi"
+          description: "CPU {{ $value }}% melebihi 80%"
+
+      - alert: DataDriftDetected
+        expr: ml_data_drift_score > 0.1
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Data drift terdeteksi"
+          description: "Drift score {{ $value }} melebihi 0.1"
