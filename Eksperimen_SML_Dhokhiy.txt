@@ -1,0 +1,9 @@
+Link GitHub Repository - Kriteria 1: Eksperimen & Automasi Preprocessing
+
+[GANTI TEKS INI DENGAN LINK REPO GITHUB KAMU]
+Contoh: https://github.com/username/Eksperimen_SML_Nama-siswa
+
+Catatan:
+- Pastikan repo bersifat PUBLIC
+- Upload file automate_siswa.py ke repo tersebut
+- Sertakan dataset yang digunakan

@@ -1,0 +1,9 @@
+Link GitHub Repository - Kriteria 3: Workflow CI/CD
+
+[GANTI TEKS INI DENGAN LINK REPO GITHUB KAMU]
+Contoh: https://github.com/username/Workflow-CI_Nama-siswa
+
+Catatan:
+- Pastikan repo bersifat PUBLIC
+- Sertakan file .github/workflows/ci.yml
+- Workflow harus menjalankan pengujian otomatis

@@ -1,0 +1,9 @@
+name: fintech_sentiment
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      epochs:     {type: int,   default: 3}
+      lr:         {type: float, default: 0.00002}
+      batch_size: {type: int,   default: 16}
+    command: "python modelling.py --epochs {epochs} --lr {lr} --batch_size {batch_size}"
